@@ -1,0 +1,129 @@
+/* Body and Background */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #f0f2f5, #e6f0ff);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px;
+  width: 100%;
+}
+
+/* Header */
+.header {
+  background-color: #004085;
+  color: #fff;
+  padding: 15px 0;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header-left-logos img {
+  height: 50px;
+}
+
+/* Language Toggle */
+.language-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(255,255,255,0.15);
+  border-radius: 20px;
+  padding: 5px 12px;
+}
+.language-toggle select {
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+/* Section Headings */
+h2 { text-align: center; color: #004085; }
+
+/* Steps */
+.step-section { display: none; animation: fadeSlide 0.6s ease; }
+.step-section.active { display: block; }
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Form */
+.internship-form-section {
+  background: #fff; padding: 20px; border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-top: 20px;
+}
+.form-group { margin-bottom: 15px; }
+.form-group label { font-weight: 600; }
+select { width: 100%; padding: 8px; }
+
+/* Checkbox Grid */
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+  gap: 8px;
+}
+.checkbox-item { background: #e9ecef; padding: 6px; border-radius: 5px; }
+
+/* Sector Buttons */
+.button-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px,1fr));
+  gap: 8px;
+}
+.sector-button {
+  background: #e9ecef; border: none; padding: 10px;
+  border-radius: 5px; cursor: pointer;
+}
+.sector-button.selected { background: #007bff; color: #fff; }
+
+/* Submit Button */
+.submit-button {
+  width: 100%; padding: 12px; border: none;
+  background: #28a745; color: #fff; border-radius: 5px;
+  font-size: 1.1em; cursor: pointer;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(40,167,69,0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(40,167,69,0); }
+  100% { box-shadow: 0 0 0 0 rgba(40,167,69,0); }
+}
+
+/* Internship Cards */
+.recommendations-list {
+  margin-top: 20px; display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 15px;
+}
+.internship-card {
+  background: #fff; border-left: 5px solid #007bff;
+  padding: 15px; border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.internship-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+.saved-badge {
+  background: #ffc107; padding: 2px 8px; border-radius: 12px;
+  font-size: 0.8em; margin-left: 6px;
+}
+
+/* Footer */
+.footer {
+  background: #004085; color: #fff; text-align: center; padding: 15px;
+  margin-top: auto;
+}

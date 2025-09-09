@@ -1,0 +1,96 @@
+InternshipID,CompanyName,Title,Sector,Education,Skills,Location
+1,RELIANCE INDUSTRIES LIMITED,HR Intern,Pharmaceuticals,BCA,Python; Excel,Kolkata
+2,TATA CONSULTANCY SERVICES LIMITED,Software Development Intern,Finance,B.Tech Chemical,Customer Service; Problem Solving,Mumbai
+3,HDFC BANK LIMITED,Electrical Engineering Intern,Finance,Diploma,Python; Excel,Pune
+4,OIL AND NATURAL GAS CORPORATION LIMITED,Consulting Intern,Manufacturing,MBA,Java; SQL,Mumbai
+5,INFOSYS LIMITED,Software Development Intern,Aerospace,B.Tech CS,Communication; Teamwork,Chennai
+6,NTPC LIMITED,HR Intern,Telecom,B.Tech Civil,Project Management; MS Office,Mumbai
+7,TATA STEEL LIMITED,Chemical Engineering Intern,Aerospace,Diploma,Data Analysis; Machine Learning,Chennai
+8,ITC LIMITED,Data Analyst Intern,Banking,Any Graduate,Project Management; MS Office,Mumbai
+9,INDIAN OIL CORPORATION LIMITED,Research Intern,Manufacturing,BCA,Java; SQL,Noida
+10,ICICI BANK LIMITED,Data Analyst Intern,Retail,Diploma,CAD; SolidWorks,Noida
+11,POWER GRID CORPORATION OF INDIA LIMITED,Research Intern,Energy,B.Tech CS,CAD; SolidWorks,Mumbai
+12,TATA SONS PRIVATE LIMITED,Electrical Engineering Intern,Pharmaceuticals,B.Tech Chemical,Data Analysis; Machine Learning,Hyderabad
+13,WIPRO LIMITED,Business Analyst Intern,IT,B.Tech CS,Research; Report Writing,Noida
+14,HCL TECHNOLOGIES LIMITED,Electrical Engineering Intern,Consulting,B.Tech Civil,AutoCAD; Structural Design,Delhi
+15,HINDUSTAN ZINC LIMITED,HR Intern,Telecom,B.Sc,Project Management; MS Office,Pune
+16,RELIANCE JIO INFOCOMM LIMITED,Electrical Engineering Intern,Construction,M.Sc,Communication; Teamwork,Bangalore
+17,MAHANADI COALFIELDS LIMITED,Operations Intern,Construction,B.Tech Chemical,Java; SQL,Delhi
+18,NMDC LIMITED,Electrical Engineering Intern,Banking,MBA,AutoCAD; Structural Design,Delhi
+19,HINDUSTAN UNILEVER LIMITED,Data Analyst Intern,Telecom,B.Tech ME,AutoCAD; Structural Design,Gurgaon
+20,REC LIMITED,Mechanical Engineering Intern,Pharmaceuticals,M.Sc,Customer Service; Problem Solving,Kolkata
+21,JSW STEEL LIMITED,Marketing Intern,Insurance,B.Tech EE,Finance; Excel,Pune
+22,GAIL (INDIA) LIMITED,Research Intern,Aerospace,B.Tech Chemical,Marketing; Social Media,Remote
+23,COGNIZANT TECHNOLOGY SOLUTIONS INDIA PRIVATE LIMITED,Business Analyst Intern,Pharmaceuticals,B.Com,Data Analysis; Machine Learning,Mumbai
+24,LARSEN AND TOUBRO LIMITED,Operations Intern,Energy,M.Sc,HTML; CSS; JavaScript,Hyderabad
+25,AXIS BANK LIMITED,Operations Intern,Automobile,B.Tech Chemical,Communication; Teamwork,Kolkata
+26,NORTHERN COALFIELDS LIMITED,Operations Intern,Healthcare,MBA,Customer Service; Problem Solving,Noida
+27,OIL INDIA LIMITED,Research Intern,Banking,B.Sc,Customer Service; Problem Solving,Hyderabad
+28,HINDUSTAN PETROLEUM CORPORATION LIMITED,Chemical Engineering Intern,Banking,B.Tech EE,Research; Report Writing,Kolkata
+29,JINDAL STEEL & POWER LIMITED,Business Analyst Intern,Finance,B.Com,Data Analysis; Machine Learning,Remote
+30,RELIANCE RETAIL LIMITED,Finance Intern,Manufacturing,MBA,Python; Excel,Remote
+31,NUCLEAR POWER CORPORATION OF INDIA LIMITED,Finance Intern,Consulting,B.Tech CS,CAD; SolidWorks,Hyderabad
+32,TECH MAHINDRA LIMITED,Chemical Engineering Intern,Construction,B.Tech ME,Research; Report Writing,Gurgaon
+33,POWER FINANCE CORPORATION LIMITED,Data Analyst Intern,Retail,Any Graduate,HTML; CSS; JavaScript,Delhi
+34,ULTRATECH CEMENT LIMITED,Software Development Intern,Automobile,B.Tech ME,Python; Excel,Pune
+35,INDUSIND BANK LTD.,Finance Intern,Automobile,B.Sc,Research; Report Writing,Gurgaon
+36,NHPC LIMITED,Mechanical Engineering Intern,Finance,B.Tech Civil,Java; SQL,Pune
+37,STEEL AUTHORITY OF INDIA LIMITED,Data Analyst Intern,Construction,B.Sc,Marketing; Social Media,Pune
+38,MARUTI SUZUKI INDIA LIMITED,Electrical Engineering Intern,Healthcare,B.Com,AutoCAD; Structural Design,Delhi
+39,VEDANTA LIMITED,Consulting Intern,Aerospace,BCA,AutoCAD; Structural Design,Mumbai
+40,BHARAT PETROLEUM CORPORATION LIMITED,Chemical Engineering Intern,Banking,B.Sc,Research; Report Writing,Hyderabad
+41,SERUM INSTITUTE OF INDIA PRIVATE LIMITED,Business Analyst Intern,Automobile,B.Tech EE,AutoCAD; Structural Design,Noida
+42,BAJAJ FINANCE LIMITED,Software Development Intern,FMCG,M.Sc,HTML; CSS; JavaScript,Bangalore
+43,MAHINDRA AND MAHINDRA LIMITED,Finance Intern,IT,B.Tech Civil,Marketing; Social Media,Bangalore
+44,HINDUSTAN AERONAUTICS LIMITED,Chemical Engineering Intern,Insurance,B.Tech CS,CAD; SolidWorks,Gurgaon
+45,SAMSUNG INDIA ELECTRONICS PRIVATE LIMITED,Data Analyst Intern,Finance,M.Sc,Data Analysis; Machine Learning,Kolkata
+46,BAJAJ AUTO LIMITED.,Finance Intern,Banking,B.Tech EE,Finance; Excel,Bangalore
+47,KOTAK MAHINDRA BANK LIMITED,Software Development Intern,Pharmaceuticals,B.Tech CS,CAD; SolidWorks,Kolkata
+48,ACCENTURE SOLUTIONS PRIVATE LIMITED,Software Development Intern,Finance,B.Sc,Python; Excel,Chennai
+49,SHRIRAM FINANCE LIMITED,HR Intern,FMCG,BCA,HTML; CSS; JavaScript,Bangalore
+50,MUTHOOT FINANCE LIMITED,Business Analyst Intern,Finance,B.Tech ME,Finance; Excel,Pune
+51,RUNGTA SONS PVT LTD,Mechanical Engineering Intern,Retail,BCA,Project Management; MS Office,Remote
+52,HERO MOTOCORP LIMITED,Data Analyst Intern,Energy,B.Com,Finance; Excel,Mumbai
+53,COAL INDIA LTD GOVT OF INDIA UNDERTAKING,Mechanical Engineering Intern,Construction,B.Tech ME,Communication; Teamwork,Chennai
+54,MEGHA ENGINEERING & INFRASTRUCTURES LIMITED,Business Analyst Intern,FMCG,M.Sc,Data Analysis; Machine Learning,Mumbai
+55,AMBUJA CEMENTS LIMITED,HR Intern,Telecom,B.Tech CS,Project Management; MS Office,Gurgaon
+56,INDUS TOWERS LIMITED,HR Intern,Energy,B.Tech CS,AutoCAD; Structural Design,Mumbai
+57,CAPGEMINI TECHNOLOGY SERVICES INDIA LIMITED,Research Intern,Retail,B.Sc,Python; Excel,Pune
+58,SOUTH EASTERN COALFIELDS LIMITED,Operations Intern,Energy,B.Sc,AutoCAD; Structural Design,Pune
+59,ASIAN PAINTS LIMITED,Operations Intern,Pharmaceuticals,B.Tech Chemical,Python; Excel,Chennai
+60,IBM INDIA PRIVATE LIMITED,Electrical Engineering Intern,Healthcare,MBA,Java; SQL,Gurgaon
+61,GRASIM INDUSTRIES LTD,Research Intern,Retail,B.Tech Chemical,Finance; Excel,Kolkata
+62,SAMMAAN CAPITAL LIMITED,Consulting Intern,Finance,B.Tech Chemical,Python; Excel,Bangalore
+63,BANDHAN BANK LIMITED,Electrical Engineering Intern,Energy,Any Graduate,Python; Excel,Gurgaon
+64,BIOP STEELS & POWER PRIVATE LIMITED,Electrical Engineering Intern,Finance,Diploma,Project Management; MS Office,Remote
+65,SHREE CEMENT LIMITED,Data Analyst Intern,Construction,Diploma,Communication; Teamwork,Hyderabad
+66,SERUM INSTITUTE LIFE SCIENCES PRIVATE LIMITED,Mechanical Engineering Intern,Consulting,B.Tech Civil,CAD; SolidWorks,Delhi
+67,ARCELORMITTAL NIPPON STEEL INDIA LIMITED,HR Intern,Automobile,Any Graduate,CAD; SolidWorks,Pune
+68,CIPLA LIMITED,Business Analyst Intern,Manufacturing,B.Com,Communication; Teamwork,Chennai
+69,UPL LIMITED,Consulting Intern,Banking,Diploma,Customer Service; Problem Solving,Mumbai
+70,SJVN LIMITED,Software Development Intern,FMCG,M.Sc,CAD; SolidWorks,Pune
+71,NUMALIGARH REFINERY LTD,HR Intern,Banking,B.Tech ME,Finance; Excel,Hyderabad
+72,ADANI PORTS AND SPECIAL ECONOMIC ZONE LIMITED,Chemical Engineering Intern,FMCG,B.Tech EE,Java; SQL,Bangalore
+73,ORACLE FINANCIAL SERVICES SOFTWARE LIMITED,Operations Intern,Aerospace,B.Com,Research; Report Writing,Chennai
+74,NLC INDIA LIMITED,Electrical Engineering Intern,Manufacturing,B.Tech EE,Customer Service; Problem Solving,Mumbai
+75,NATIONAL STOCK EXCHANGE OF INDIA LTD.,Mechanical Engineering Intern,Telecom,B.Tech EE,Marketing; Social Media,Remote
+76,THE ASSOCIATED BUILDING COMPANY LIMITED,Data Analyst Intern,Finance,B.Sc,Python; Excel,Noida
+77,DIVI S LABORATORIES LIMITED,Chemical Engineering Intern,Manufacturing,B.Tech Chemical,Marketing; Social Media,Remote
+78,INDIAN RAILWAY FINANCE CORPORATION LIMITED,Data Analyst Intern,Pharmaceuticals,B.Tech CS,Java; SQL,Mumbai
+79,LTIMINDTREE LIMITED,Data Analyst Intern,Manufacturing,B.Tech EE,Java; SQL,Chennai
+80,ZOHO CORPORATION PRIVATE LIMITED,Electrical Engineering Intern,FMCG,B.Sc,Data Analysis; Machine Learning,Mumbai
+81,ACC LIMITED,Finance Intern,Energy,MBA,Data Analysis; Machine Learning,Bangalore
+82,SUN TV NETWORK LIMITED,Electrical Engineering Intern,Construction,Any Graduate,Finance; Excel,Kolkata
+83,CENTRAL COALFIELDS LIMITED,Operations Intern,IT,B.Com,Finance; Excel,Gurgaon
+84,TITAN COMPANY LIMITED,HR Intern,Aerospace,MBA,CAD; SolidWorks,Remote
+85,SIKKA PORTS & TERMINALS LIMITED,Mechanical Engineering Intern,Aerospace,BCA,CAD; SolidWorks,Mumbai
+86,DR.REDDY S LABORATORIES LTD,Data Analyst Intern,Automobile,BCA,Research; Report Writing,Gurgaon
+87,M.P. AGROTONICS LIMITED,Chemical Engineering Intern,Healthcare,BCA,Finance; Excel,Kolkata
+88,BRITANNIA INDUSTRIES LTD,Business Analyst Intern,Finance,B.Tech CS,Finance; Excel,Hyderabad
+89,HINDALCO INDUSTRIES LIMITED,Chemical Engineering Intern,Energy,B.Tech Chemical,Data Analysis; Machine Learning,Delhi
+90,JAMNAGAR UTILITIES & POWER PRIVATE LIMITED,Business Analyst Intern,Energy,Diploma,Project Management; MS Office,Gurgaon
+91,RECKITT BENCKISER (INDIA) PRIVATE LIMITED,Research Intern,Consulting,B.Sc,HTML; CSS; JavaScript,Noida
+92,BHARAT ALUMINIUM CO LTD,Business Analyst Intern,Finance,M.Sc,AutoCAD; Structural Design,Gurgaon
+93,HYUNDAI MOTOR INDIA LIMITED,HR Intern,Construction,MBA,CAD; SolidWorks,Hyderabad
+94,CHOLAMANDALAM INVESTMENT AND FINANCE COMPANY LIMITED,Finance Intern,Aerospace,B.Tech Civil,Customer Service; Problem Solving,Remote
+95,NATIONAL ALUMINIUM CO LTD,Data Analyst Intern,FMCG,Any Graduate,Project Management; MS Office,Noida
