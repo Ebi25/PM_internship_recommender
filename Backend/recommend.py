@@ -1,4 +1,3 @@
-
 import pandas as pd
 
 def get_recommendations(df, education, skills, sector, location, top_n=5):
@@ -18,14 +17,12 @@ def get_recommendations(df, education, skills, sector, location, top_n=5):
         list: A list of dictionaries, each representing a recommended internship
               and its match details.
     """
-    # Check if the DataFrame is empty to prevent errors
     if df.empty:
         print("Warning: The internship DataFrame is empty. No recommendations can be generated.")
         return []
 
     results = []
 
-    # Iterate through each row of the DataFrame to calculate a relevance score
     for _, row in df.iterrows():
         score = 0
         reasons = []
@@ -45,12 +42,10 @@ def get_recommendations(df, education, skills, sector, location, top_n=5):
             score += 2
             reasons.append(f"Preferred location ({location})")
 
-        # Match skills - using a more robust approach
+        # Corrected skills matching logic: split by semicolon
         row_skills_str = str(row.get("Skills", "")).lower()
-        # Clean the string, split by comma, and remove leading/trailing whitespace
-        row_skills = [s.strip() for s in row_skills_str.split(",") if s.strip()]
+        row_skills = [s.strip() for s in row_skills_str.split(";") if s.strip()]
         
-        # Find which of the user's skills match the internship's skills
         user_skills_lower = [s.lower() for s in skills]
         matched_skills = [s for s in user_skills_lower if s in row_skills]
         
@@ -58,7 +53,6 @@ def get_recommendations(df, education, skills, sector, location, top_n=5):
             score += len(matched_skills)
             reasons.append(f"Skills match ({', '.join(matched_skills)})")
 
-        # Only add to results if a match was found
         if score > 0:
             results.append({
                 "CompanyName": row["CompanyName"],
@@ -71,8 +65,6 @@ def get_recommendations(df, education, skills, sector, location, top_n=5):
                 "Score": score
             })
 
-    # Sort the results by score in descending order
     results = sorted(results, key=lambda x: x["Score"], reverse=True)
 
-    # Return only the top N recommendations
     return results[:top_n]
