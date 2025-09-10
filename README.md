@@ -76,6 +76,8 @@ pm-internship-recommender/
 
 
 
+
+
 Getting Started
 
 Follow these steps to get a copy of the project up and running on your local machine.
@@ -100,6 +102,8 @@ cd PM\_internship\_recommender
 
 
 
+
+
 2\. Install Dependencies
 
 You need to install the required Python libraries for the backend. Navigate to the Backend directory and use pip to install the packages.
@@ -109,6 +113,8 @@ You need to install the required Python libraries for the backend. Navigate to t
 cd Backend
 
 pip install Flask pandas Flask-Cors
+
+
 
 
 
@@ -128,6 +134,8 @@ python app.py
 
 
 
+
+
 Start Frontend
 
 
@@ -135,6 +143,8 @@ Start Frontend
 cd ../Frontend
 
 python -m http.server
+
+
 
 
 
