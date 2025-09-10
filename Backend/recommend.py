@@ -1,25 +1,31 @@
-import pandas as pd
+import re
+
+def normalize_and_split_skills(skills_field):
+    """
+    Accepts a string from CSV (skills) and returns a list of normalized skills (lowercase).
+    Splits on ; , | / and extra spaces.
+    """
+    if not isinstance(skills_field, str):
+        return []
+    # Replace common separators with semicolon, then split
+    s = re.sub(r"[,/|]+", ";", skills_field)
+    parts = [p.strip().lower() for p in s.split(";") if p.strip()]
+    return parts
 
 def get_recommendations(df, education, skills, sector, location, top_n=5):
     """
-    Analyzes a DataFrame of internships and returns a list of ranked recommendations
-    based on a user's education, skills, sector, and location preferences.
-
-    Args:
-        df (pd.DataFrame): The DataFrame containing internship data.
-        education (str): The user's education level.
-        skills (list): A list of the user's skills.
-        sector (str): The user's preferred sector.
-        location (str): The user's preferred location.
-        top_n (int): The number of top recommendations to return.
-
-    Returns:
-        list: A list of dictionaries, each representing a recommended internship
-              and its match details.
+    Rule-based lightweight recommender.
+    Returns list of dicts with keys:
+      CompanyName, Title, Sector, Education, Skills (list), Location, Reasons (list), Score
     """
-    if df.empty:
-        print("Warning: The internship DataFrame is empty. No recommendations can be generated.")
+    if df is None or df.empty:
         return []
+
+    # normalize user inputs
+    user_education = (education or "").strip()
+    user_sector = (sector or "").strip()
+    user_location = (location or "").strip()
+    user_skills = [s.strip().lower() for s in (skills or []) if isinstance(s, str) and s.strip()]
 
     results = []
 
@@ -27,44 +33,53 @@ def get_recommendations(df, education, skills, sector, location, top_n=5):
         score = 0
         reasons = []
 
-        # Match education
-        if education and (row["Education"] == education or row["Education"] == "Any Graduate"):
-            score += 2
-            reasons.append(f"Education match ({education})")
+        row_education = str(row.get("Education", "")).strip()
+        row_sector = str(row.get("Sector", "")).strip()
+        row_location = str(row.get("Location", "")).strip()
 
-        # Match sector
-        if sector and row["Sector"] == sector:
-            score += 2
-            reasons.append(f"Sector interest ({sector})")
+        # Education match (strong)
+        if user_education:
+            if row_education.lower() == user_education.lower() or row_education.lower() == "any graduate":
+                score += 3
+                reasons.append(f"Education match ({user_education})")
+        else:
+            # no user education specified -> small default boost
+            score += 0
 
-        # Match location
-        if location and (row["Location"] == location or row["Location"] == "Remote"):
-            score += 2
-            reasons.append(f"Preferred location ({location})")
+        # Sector match (strong)
+        if user_sector:
+            if row_sector.lower() == user_sector.lower():
+                score += 3
+                reasons.append(f"Sector interest ({user_sector})")
 
-        # Corrected skills matching logic: split by semicolon
-        row_skills_str = str(row.get("Skills", "")).lower()
-        row_skills = [s.strip() for s in row_skills_str.split(";") if s.strip()]
-        
-        user_skills_lower = [s.lower() for s in skills]
-        matched_skills = [s for s in user_skills_lower if s in row_skills]
-        
+        # Location match (strong)
+        if user_location:
+            if row_location.lower() == user_location.lower() or row_location.lower() == "remote":
+                score += 2
+                reasons.append(f"Preferred location ({user_location})")
+
+        # Skills match (count matches)
+        row_skills = normalize_and_split_skills(row.get("Skills", ""))
+        matched_skills = [s for s in user_skills if s in row_skills]
         if matched_skills:
+            # give one point per matched skill
             score += len(matched_skills)
-            reasons.append(f"Skills match ({', '.join(matched_skills)})")
+            reasons.append("Skills match (" + ", ".join(matched_skills) + ")")
 
+        # If we got any score, include
         if score > 0:
             results.append({
-                "CompanyName": row["CompanyName"],
-                "Title": row["Title"],
-                "Sector": row["Sector"],
-                "Education": row["Education"],
+                "InternshipID": int(row.get("InternshipID")) if row.get("InternshipID") is not None else None,
+                "CompanyName": row.get("CompanyName", ""),
+                "Title": row.get("Title", ""),
+                "Sector": row_sector,
+                "Education": row_education,
                 "Skills": row_skills,
-                "Location": row["Location"],
+                "Location": row_location,
                 "Reasons": reasons,
                 "Score": score
             })
 
-    results = sorted(results, key=lambda x: x["Score"], reverse=True)
-
+    # sort by score desc, then by CompanyName for stable ordering
+    results.sort(key=lambda x: (-x["Score"], x["CompanyName"]))
     return results[:top_n]
